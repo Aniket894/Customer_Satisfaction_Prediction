@@ -132,10 +132,11 @@ The data transformation module preprocesses the dataset, including encoding cate
 ### 7. Model Training
 The model training module trains multiple machine learning classification models, such as:
 - **Logistic Regression**
+- **Ridge Classifier**
 - **Decision Tree Classifier**
 - **Random Forest Classifier**
+- **AdaBoost Classifier**
 - **Gradient Boosting Classifier**
-- **XGBoost Classifier**
 - **KNeighbors Classifier**
 
 The best-performing model is saved as `best_model.pkl` in the `artifacts/` folder.
