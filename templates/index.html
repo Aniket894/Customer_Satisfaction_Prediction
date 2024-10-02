@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Satisfaction Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <h1>Flight Satisfaction Prediction (Classification)</h1>
+
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender" required><br>
+        
+        <label for="Customer Type">Customer Type:</label>
+        <input type="text" id="Customer Type" name="Customer Type" required><br>
+        
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" required><br>
+        
+        <label for="Type of Travel">Type of Travel:</label>
+        <input type="text" id="Type of Travel" name="Type of Travel" required><br>
+        
+        <label for="Class">Class:</label>
+        <input type="text" id="Class" name="Class" required><br>
+        
+        <label for="Flight Distance">Flight Distance:</label>
+        <input type="number" id="Flight Distance" name="Flight Distance" required><br>
+        
+        <label for="Inflight wifi service">Inflight wifi service:</label>
+        <input type="number" id="Inflight wifi service" name="Inflight wifi service" required><br>
+        
+        <label for="Departure/Arrival time convenient">Departure/Arrival time convenient:</label>
+        <input type="number" id="Departure/Arrival time convenient" name="Departure/Arrival time convenient" required><br>
+        
+        <label for="Ease of Online booking">Ease of Online booking:</label>
+        <input type="number" id="Ease of Online booking" name="Ease of Online booking" required><br>
+        
+        <label for="Gate location">Gate location:</label>
+        <input type="number" id="Gate location" name="Gate location" required><br>
+        
+        <label for="Food and drink">Food and drink:</label>
+        <input type="number" id="Food and drink" name="Food and drink" required><br>
+        
+        <label for="Online boarding">Online boarding:</label>
+        <input type="number" id="Online boarding" name="Online boarding" required><br>
+        
+        <label for="Seat comfort">Seat comfort:</label>
+        <input type="number" id="Seat comfort" name="Seat comfort" required><br>
+        
+        <label for="Inflight entertainment">Inflight entertainment:</label>
+        <input type="number" id="Inflight entertainment" name="Inflight entertainment" required><br>
+        
+        <label for="On-board service">On-board service:</label>
+        <input type="number" id="On-board service" name="On-board service" required><br>
+        
+        <label for="Leg room service">Leg room service:</label>
+        <input type="number" id="Leg room service" name="Leg room service" required><br>
+        
+        <label for="Baggage handling">Baggage handling:</label>
+        <input type="number" id="Baggage handling" name="Baggage handling" required><br>
+        
+        <label for="Checkin service">Checkin service:</label>
+        <input type="number" id="Checkin service" name="Checkin service" required><br>
+        
+        <label for="Inflight service">Inflight service:</label>
+        <input type="number" id="Inflight service" name="Inflight service" required><br>
+        
+        <label for="Cleanliness">Cleanliness:</label>
+        <input type="number" id="Cleanliness" name="Cleanliness" required><br>
+        
+        <label for="Departure Delay in Minutes">Departure Delay in Minutes:</label>
+        <input type="number" id="Departure Delay in Minutes" name="Departure Delay in Minutes" required><br>
+        
+        <label for="Arrival Delay in Minutes">Arrival Delay in Minutes:</label>
+        <input type="number" step="any" id="Arrival Delay in Minutes" name="Arrival Delay in Minutes" required><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
